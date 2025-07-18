@@ -3,13 +3,13 @@
 }
 body {
     background-color: black;
-    color: rgb(7, 99, 169);
+    color: rgb(47, 136, 203);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding-left: 25px;
+    padding-left: 20px;
 }
 h1 {
-    font-size: 60px;
+    font-size:35px;
 }
 p {
-    font-size: 35px;
+    font-size: 25px;
 }
