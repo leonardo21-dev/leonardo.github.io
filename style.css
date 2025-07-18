@@ -5,10 +5,11 @@ body {
     background-color: black;
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-left: 25px;
 }
 h1 {
-    font-size: 35px;
+    font-size: 60px;
 }
 p {
-    font-size: 27px;
+    font-size: 35px;
 }
