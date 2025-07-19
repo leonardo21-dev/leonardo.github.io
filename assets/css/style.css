@@ -1,11 +1,12 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 body {
     background-color: black;
     color: rgb(180, 210, 255);
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding-left: 15px;
 }
 h1 {
     font-size: 28px;
@@ -16,6 +17,15 @@ p {
     font-size: 19px;
     transition: ease-in 0.5s;
 }
+.header-container {
+    width: 100vw;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .header-container:hover {
    color:rgb(70, 118, 252);
 }
+
