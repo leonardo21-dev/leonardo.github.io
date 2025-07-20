@@ -3,29 +3,362 @@
     margin: 0;
     padding: 0;
 }
+
 body {
-    background-color: black;
-    color: rgb(180, 210, 255);
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Times New Roman', Times, sans-serif;
 }
+
+header {
+    height: 40px;
+    background-color: rgb(0, 8, 46);
+}
+
+.header {
+    max-width: 1140px;
+    margin: auto;
+    height: 40px;
+    display: flex;
+}
+
+.menu {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    height: 40px;
+    flex: 1;
+}
+
+.menu li,
+.menu ul {
+    list-style: none;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+}
+
+.menu li a {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    padding-right: 5px;
+    padding-left: 5px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid rgb(0, 8, 46);
+    font-size: 14px;
+}
+
+.menu li a:hover,
+.menu .active a {
+    border-bottom: 2px solid #ffffff;
+    color: #d8d8d8;
+}
+
 h1 {
-    font-size: 28px;
-    font-weight: 800;
-    transition: ease-in 0.5s;
+    font-size: 50px;
+    transition: ease-in 1s;
+    color: rgb(255, 255, 255);
+    padding-bottom: 10px;
 }
+
+h2 {
+    font-size: 35px;
+    transition: ease-in 1.5s;
+    color: rgb(255, 255, 255);
+}
+
 p {
-    font-size: 19px;
-    transition: ease-in 0.5s;
+    font-size: 20px;
+    transition: ease-in 2s;
+    color: rgb(236, 243, 253);
 }
-.header-container {
+
+.titles {
+    padding-top: 40px;
+    padding-left: 25px;
+    max-width: 1140px;
+    margin: auto;
+}
+
+
+
+.banner {
+    height: 300px;
+    background-color: #2c2c2c;
+    background-image: url('../images/imagem-fundo.jpg');
+    background-size: cover;
+    background-position: top;
+}
+
+
+.default {
     width: 100vw;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.default .section-title,
+.default .section-desc {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.default .section-title {
+    font-size: 20px;
+}
+
+.default .section-desc {
+    font-size: 12px;
+    color: #999;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.default .section-body {
+    max-width: 1140px;
+    margin: auto;
+}
+
+.default.light {
+    background-color: #f7f7f7;
+}
+
+.default.light .section-title {
+    color: #000;
+}
+
+.default.dark {
+    background-color: rgb(0, 8, 46);
+}
+
+.default.dark .section-title {
+    color: #FFF;
+}
+
+
+.skill-title {
+    font-weight: 500;
+}
+
+
+.skills {
+    background-color: #fcfcfc;
+    height: 355px;
     padding: 20px;
+    max-width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-.header-container:hover {
-   color:rgb(70, 118, 252);
+    border-radius: 10px;
 }
 
+.skills .html {
+    border-radius: 30px;
+    margin-bottom: 35px;
+    margin-top: 5px;
+    border: 1px solid #000;
+    width: 600px;
+}
+
+.html-skill {
+    width: 100%;
+    background-color: rgb(3, 216, 39);
+    border-radius: 30px;
+    height: 8px;
+}
+
+.skills .css {
+    border-radius: 30px;
+    margin-bottom: 35px;
+    margin-top: 5px;
+    border: 1px solid #000;
+    width: 600px;
+}
+
+.css-skills {
+    width: 80%;
+    background-color: rgb(3, 216, 39);
+    border-radius: 30px;
+    height: 8px;
+}
+
+.skills .javascript {
+    border-radius: 30px;
+    margin-bottom: 35px;
+    margin-top: 5px;
+    border: 1px solid #000;
+    width: 600px;
+}
+
+.js-skills {
+    width: 65%;
+    background-color: rgb(3, 216, 39);
+    border-radius: 30px;
+    height: 8px;
+}
+
+.skills .git {
+    border-radius: 30px;
+    margin-bottom: 35px;
+    margin-top: 5px;
+    border: 1px solid #000;
+    width: 600px;
+}
+
+.git-skills {
+    width: 85%;
+    background-color: rgb(3, 216, 39);
+    border-radius: 30px;
+    height: 8px;
+}
+
+.skills .ts {
+    border-radius: 30px;
+    margin-bottom: 35px;
+    margin-top: 5px;
+    border: 1px solid #000;
+    width: 600px;
+}
+
+.ts-skills {
+    width: 35%;
+    background-color: rgb(3, 216, 39);
+    border-radius: 30px;
+    height: 8px;
+}
+
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 20.4vh;
+}
+
+
+@media (max-width: 768px) {
+
+    /* HEADER / MENU */
+    header {
+        height: auto;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 10px 0;
+    }
+
+    .menu {
+        display: none;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        display: none;
+        padding-right: 30px;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .menu li a {
+        height: auto;
+        padding: 10px;
+        font-size: 16px;
+        border: none;
+    }
+
+    .menu li a:hover,
+    .menu .active a {
+        border-bottom: none;
+        color: #d8d8d8;
+    }
+
+    /* TITLES */
+    .titles {
+        padding: 20px 15px;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    /* BANNER */
+    .banner {
+        height: 200px;
+        background-position: center;
+    }
+
+    /* SECTIONS */
+    .default {
+        padding: 30px 15px;
+    }
+
+    .default .section-title {
+        font-size: 16px;
+    }
+
+    .default .section-desc {
+        font-size: 12px;
+    }
+
+    /* SKILLS */
+    .skills {
+        padding: 15px;
+        height: auto;
+    }
+
+    .skills-01 {
+        width: 100%;
+    }
+
+    .skills .html,
+    .skills .css,
+    .skills .javascript,
+    .skills .git,
+    .skills .ts {
+        width: 100%;
+    }
+
+    .html-skill,
+    .css-skills,
+    .js-skills,
+    .git-skills,
+    .ts-skills {
+        height: 8px;
+    }
+
+    .skill-title {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    /* FOOTER */
+    .footer span {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+        padding: 20px 10px;
+        gap: 10px;
+    }
+}
