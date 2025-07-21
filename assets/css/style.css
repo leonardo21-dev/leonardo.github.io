@@ -1,3 +1,4 @@
+/* --------------------- RESET BÁSICO --------------------- */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -8,6 +9,7 @@ body {
     font-family: 'Times New Roman', Times, serif;
 }
 
+/* --------------------- HEADER --------------------- */
 header {
     height: 40px;
     background-color: rgb(0, 8, 46);
@@ -20,6 +22,22 @@ header {
     display: flex;
 }
 
+/* Botão de menu sanduíche para mobile */
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.menu-toggle-area {
+    display: flex;
+    width: 100vw;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* --------------------- MENU DESKTOP --------------------- */
 .menu {
     display: flex;
     justify-content: end;
@@ -37,7 +55,6 @@ header {
     display: flex;
     justify-content: end;
     align-items: center;
-
 }
 
 .menu li a {
@@ -45,8 +62,7 @@ header {
     text-transform: uppercase;
     font-weight: bold;
     text-decoration: none;
-    padding-right: 5px;
-    padding-left: 5px;
+    padding: 0 5px;
     height: 40px;
     display: flex;
     align-items: center;
@@ -60,6 +76,7 @@ header {
     color: #d8d8d8;
 }
 
+/* --------------------- TEXTOS --------------------- */
 h1 {
     font-size: 40px;
     transition: ease-in 1s;
@@ -77,12 +94,9 @@ p {
     border-radius: 20px;
     display: flex;
     border: 1px solid #FFF;
-
-
 }
 
-.section-body-area {}
-
+/* --------------------- ÁREA SOBRE --------------------- */
 .section-body-area-item {
     background-color: rgb(0, 8, 46);
     display: flex;
@@ -94,10 +108,10 @@ p {
     color: #FFF;
 }
 
+/* --------------------- BANNER --------------------- */
 .banner {
     height: 300px;
     background-color: rgb(0, 8, 46);
-    ;
     background-image: url('../images/imagem-fundo.jpg');
     background-size: cover;
     background-position: top;
@@ -120,16 +134,15 @@ p {
     width: 100%;
 }
 
-.titles-area h1:hover {
-    font-size: 45px;
-    transition: ease-in-out 0.5s;
-    color: #eeeeee;
-}
-
+/* --------------------- SEÇÕES --------------------- */
 .default {
     width: 100vw;
     padding-top: 50px;
     padding-bottom: 50px;
+    font-size: 20px;
+    color: #000000;
+    text-align: center;
+    font-weight: bold;
 }
 
 .default .section-title,
@@ -138,13 +151,6 @@ p {
     text-transform: uppercase;
     font-weight: 600;
     padding-bottom: 10px;
-}
-
-.default {
-    font-size: 20px;
-    color: #000000;
-    text-align: center;
-    font-weight: bold;
 }
 
 .default .section-desc {
@@ -168,17 +174,6 @@ p {
     color: #fff;
 }
 
-.section-title-area {
-    max-width: 1140px;
-    margin: auto;
-    background-color: rgb(0, 8, 46);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 8px;
-
-}
-
 .default.dark {
     background-color: rgb(0, 8, 46);
     background-image: url('../images/imagem-body.jpg');
@@ -190,25 +185,32 @@ p {
     color: #FFF;
 }
 
+.section-title-area {
+    max-width: 1140px;
+    margin: auto;
+    background-color: rgb(0, 8, 46);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 8px;
+}
+
+/* --------------------- HABILIDADES --------------------- */
 .skills {
     background-color: #eeeeee;
-    height: auto;
     padding: 25px;
     display: flex;
     justify-content: center;
     border-radius: 20px;
     width: auto;
-    display: flex;
 }
 
 .skills-area {
-    margin-left: 50px;
-    margin-right: 50px;
+    margin: 0 50px;
     padding: 15px;
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
 
@@ -239,94 +241,29 @@ p {
     padding-bottom: 5px;
 }
 
-.html {
+/* Barras de progresso */
+.html, .css, .javascript, .git, .ts {
     border-radius: 10px;
     height: 11px;
     display: flex;
     width: 80%;
     border: 1px solid #000;
-
 }
 
-.html-skill {
+.html-skill, .css-skills, .js-skills, .git-skills, .ts-skills {
     height: 9px;
     border-radius: 10px;
     background-color: chartreuse;
-    width: 100%;
 }
 
-.css {
-    border-radius: 10px;
-    height: 11px;
-    display: flex;
-    width: 80%;
-    border: 1px solid #000;
-}
+.html-skill { width: 100%; }
+.css-skills { width: 80%; }
+.js-skills { width: 65%; }
+.git-skills { width: 85%; }
+.ts-skills  { width: 35%; }
 
-.css-skills {
-    height: 9px;
-    border-radius: 10px;
-    background-color: chartreuse;
-    width: 80%;
-}
-
-.javascript {
-    border-radius: 10px;
-    height: 11px;
-    display: flex;
-    width: 80%;
-    border: 1px solid #000;
-}
-
-.js-skills {
-    height: 9px;
-    border-radius: 10px;
-    background-color: chartreuse;
-    width: 65%;
-}
-
-.git {
-    border-radius: 10px;
-    height: 11px;
-    display: flex;
-    width: 80%;
-    border: 1px solid #000;
-}
-
-.git-skills {
-    height: 9px;
-    border-radius: 10px;
-    background-color: chartreuse;
-    width: 85%;
-}
-
-.ts {
-    border-radius: 10px;
-    height: 11px;
-    display: flex;
-    width: 80%;
-    border: 1px solid #000;
-}
-
-.ts-skills {
-    height: 09px;
-    border-radius: 10px;
-    background-color: chartreuse;
-    width: 35%;
-}
-
-
-
-.footer span {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    height: 20.4vh;
-    background-color: #eeeeee;
-}
-
+/* --------------------- RODAPÉ --------------------- */
 .footer-area {
-    height: auto;
     display: flex;
     margin-right: 10px;
 }
@@ -352,26 +289,22 @@ p {
     color: #FFF;
 }
 
+.adress, .telefone, .email {
+    margin-bottom: 5px;
+}
+
 .adress {
     margin-top: 10px;
-    margin-bottom: 5px;
 }
 
-.telefone {
-    margin-bottom: 5px;
-}
-
-.email {
-    margin-bottom: 5px;
-}
-
-
+/* --------------------- MEDIA QUERY: MOBILE --------------------- */
 @media (min-width: 280px) and (max-width:650px) {
 
     header {
         height: 40px;
     }
 
+    /* Oculta links do menu em mobile */
     .menu li a {
         display: none;
     }
@@ -395,27 +328,19 @@ p {
         color: rgb(236, 243, 253);
     }
 
-
     .default {
-        width: 100vw;
         padding-top: 20px;
         padding-bottom: 50px;
     }
 
     .skills {
         background-color: #fcfcfc;
-        height: auto;
-        width: auto;
         padding: 25px;
-        display: flex;
         justify-content: center;
         border-radius: 20px;
-
     }
 
     .skills-area {
-        height: auto;
-        width: auto;
         padding: 15px;
     }
 
@@ -427,4 +352,44 @@ p {
         padding-top: 5px;
         padding-bottom: 5px;
     }
+
+    /* Exibe o menu sanduíche */
+    .menu-toggle {
+        display: block;
+        padding: 5px 15px;
+    }
+
+    .menu {
+        position: absolute;
+        top: 40px;
+        right: 0;
+        border-radius: 5px;
+        display: none;
+        width: 200px;
+        padding: 10px;
+    }
+
+    .menu.active {
+        display: block;
+    }
+
+    #menu-ul {
+        flex-direction: column;
+        align-items: flex-end;
+        background-color: rgb(0, 8, 46);
+        width: 100%;
+    }
+
+    #menu-ul li {
+        margin-bottom: 2px;
+    }
+
+    .menu li a {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        text-align: right;
+        font-size: 16px;
+    }
+
 }
