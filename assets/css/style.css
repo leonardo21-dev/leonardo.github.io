@@ -29,7 +29,12 @@ header {
     cursor: pointer;
     color: #fff;
 }
-
+.line-area {
+    width: 25px;
+    height: 3px;
+    margin: 10px;
+    background-color: rgb(255, 255, 255);
+}
 .menu-toggle-area {
     display: flex;
     width: 100vw;
@@ -301,7 +306,7 @@ p {
 @media (min-width: 280px) and (max-width:650px) {
 
     header {
-        height: 40px;
+        height: 45px;
     }
 
     /* Oculta links do menu em mobile */
@@ -356,12 +361,10 @@ p {
     /* Exibe o menu sanduíche */
     .menu-toggle {
         display: block;
-        padding: 5px 15px;
     }
 
     .menu {
         position: absolute;
-        top: 40px;
         right: 0;
         border-radius: 5px;
         display: none;
