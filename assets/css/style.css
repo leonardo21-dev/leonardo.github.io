@@ -84,15 +84,24 @@ header {
 /* --------------------- TEXTOS --------------------- */
 h1 {
     font-size: 40px;
-    transition: ease-in 1s;
+    transition: ease-in 0.5s;
     color: rgb(255, 255, 255);
     text-transform: uppercase;
     margin: 25px 25px 25px 0px;
 }
-
+.ativa{
+    font-size: 40px;
+    transition: ease-in 0.5s;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    background-color:rgb(0, 14, 87);
+    padding: 3px;
+    border: 1px solid #FFF;
+    border-radius: 30px;
+}
 p {
     font-size: 20px;
-    transition: ease-in 2s;
+    transition: ease-in 0.5s;
     color: rgb(236, 243, 253);
     background-color: rgb(0, 8, 46);
     padding: 5px;
@@ -100,7 +109,16 @@ p {
     display: flex;
     border: 1px solid #FFF;
 }
-
+.pativa {
+    font-size: 22px;
+    transition: ease-in 0.5s;
+    color: rgb(236, 243, 253);
+    background-color: rgb(0, 14, 87);
+    padding: 5px;
+    border-radius: 20px;
+    display: flex;
+    border: 1px solid #FFF;
+}
 /* --------------------- ÁREA SOBRE --------------------- */
 .section-body-area-item {
     background-color: rgb(0, 8, 46);
@@ -228,6 +246,18 @@ p {
     margin-bottom: 10px;
     border: 3px solid rgb(0, 8, 46);
     border-radius: 15px;
+    background-color: rgb(0, 8, 46);
+    color: #FFF;
+}
+.skill-area-item-x {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+    border: 3px solid rgb(0, 8, 46);
+    border-radius: 15px;
     background-color: rgb(0, 14, 87);
     color: #FFF;
 }
@@ -303,7 +333,7 @@ p {
 }
 
 /* --------------------- MEDIA QUERY: MOBILE --------------------- */
-@media (min-width: 280px) and (max-width:650px) {
+@media (max-width:650px) {
 
     header {
         height: 45px;
@@ -322,15 +352,30 @@ p {
 
     h1 {
         font-size: 25px;
-        transition: ease-in 1s;
+        transition: ease-in 0.5s;
         color: rgb(255, 255, 255);
         padding-bottom: 5px;
+    }
+    h1:hover {
+        font-size: 25px;
+        transition: ease-in 0.5s;
+        color: rgb(255, 255, 255);
+        padding: 5px;
+        background-color: rgb(0, 8, 46);
+        border-radius: 25px;
+        border: 1px solid #FFF;
     }
 
     p {
         font-size: 12px;
-        transition: ease-in 2s;
+        transition: ease-in 0.5s;
         color: rgb(236, 243, 253);
+    }
+    p:hover {
+        font-size: 17px;
+        transition: ease-in 0.5s;
+        color: rgb(236, 243, 253);
+        
     }
 
     .default {
@@ -351,6 +396,9 @@ p {
 
     .skill-area-item {
         width: 250px;
+    }
+    .skill-area-item:hover {
+        background-color: rgb(0, 14, 87) ;
     }
 
     .skill-title {
